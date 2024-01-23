@@ -1,0 +1,8 @@
+<div class="pagination-container">
+    <ul class="pagination">
+      <li *ngFor="let page of pages" (click)="onChangePage(page)">
+        <span [ngClass]="{'pagination-active' : currentPage == page}">{{ page }}</span>
+      </li>
+    </ul>
+  </div>
+  
